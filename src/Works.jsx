@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import HeaderandFooter from './Components/HeaderandFooter';
-import background2 from './assets/background2.PNG';
+import background2 from './assets/background2.png';
 import TrackED1 from './assets/TrackED1.PNG';
 import TrackED2 from './assets/TrackED2.PNG';
 import TrackED3 from './assets/TrackED3.PNG';
