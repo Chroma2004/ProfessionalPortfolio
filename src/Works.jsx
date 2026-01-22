@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import HeaderandFooter from './Components/HeaderandFooter';
 import background2 from './assets/background2.png';
-import TrackED1 from './assets/TrackED1.PNG';
-import TrackED2 from './assets/TrackED2.PNG';
-import TrackED3 from './assets/TrackED3.PNG';
-import TrackED4 from './assets/TrackED4.PNG';
-import TrackED5 from './assets/TrackED5.PNG';
+import TrackED1 from './assets/TrackED1.png';
+import TrackED2 from './assets/TrackED2.png';
+import TrackED3 from './assets/TrackED3.png';
+import TrackED4 from './assets/TrackED4.png';
+import TrackED5 from './assets/TrackED5.png';
 import Port1 from './assets/Port1.PNG';
 import Port2 from './assets/Port2.PNG';
 import Port3 from './assets/Port3.PNG';
