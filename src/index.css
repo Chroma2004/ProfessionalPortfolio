@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400;500;600;700;800;900&display=swap');
+
+/* Custom Scrollbar Styles */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4f46e5 transparent;
+}
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track { 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6366f1;
+  border: 2px solid transparent; /* Changed border to transparent */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #818cf8;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+@layer utilities {
+  .font-sofia-condensed {
+    font-family: "Sofia Sans Condensed", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .font-akshar {
+    font-family: "Akshar", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  }
+  
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  
+  .scrollbar-thumb-indigo {
+    scrollbar-color: #4f46e5 transparent; /* Updated to transparent */
+  }
+  
+  .scrollbar-thumb-indigo::-webkit-scrollbar-thumb {
+    background: #4f46e5;
+  }
+}
+
+html, body {
+  background: transparent;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
