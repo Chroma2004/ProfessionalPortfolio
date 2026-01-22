@@ -82,25 +82,51 @@ function Home() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 w-full max-w-md">
-              <a href="#" className="text-white/70 hover:text-orange-300 transition-colors duration-200 
-                text-xs sm:text-sm font-akshar px-2 py-1">
+              {/* LinkedIn */}
+              <a 
+                href="https://www.linkedin.com/in/michael-gonzales-ba65a2361/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-orange-300 transition-colors duration-200 
+                  text-xs sm:text-sm font-akshar px-2 py-1"
+              >
                 LinkedIn
               </a>
-              <a href="#" className="text-white/70 hover:text-orange-300 transition-colors duration-200 
-                text-xs sm:text-sm font-akshar px-2 py-1">
+              
+              {/* Instagram */}
+              <a 
+                href="https://www.instagram.com/chromaa.png/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-orange-300 transition-colors duration-200 
+                  text-xs sm:text-sm font-akshar px-2 py-1"
+              >
                 Instagram
               </a>
-              <a href="#" className="text-white/70 hover:text-orange-300 transition-colors duration-200 
-                text-xs sm:text-sm font-akshar px-2 py-1">
+              
+              {/* Facebook */}
+              <a 
+                href="https://www.facebook.com/MchaelRh" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-orange-300 transition-colors duration-200 
+                  text-xs sm:text-sm font-akshar px-2 py-1"
+              >
                 Facebook
               </a>
-              <a href="#" className="text-white/70 hover:text-orange-300 transition-colors duration-200 
-                text-xs sm:text-sm font-akshar px-2 py-1">
-                Gmail
+              
+              {/* Email - Fixed */}
+              <a 
+                href="mailto:michaelrhoigonzales@gmail.com?subject=Portfolio Inquiry&body=Hello Michael,"
+                className="text-white/70 hover:text-orange-300 transition-colors duration-200 
+                  text-xs sm:text-sm font-akshar px-2 py-1"
+              >
+                Email
               </a>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   );

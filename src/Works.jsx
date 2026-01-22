@@ -11,7 +11,7 @@ import Port2 from './assets/Port2.png';
 import Port3 from './assets/Port3.png';
 import Port4 from './assets/Port4.png';
 import GA1 from './assets/GA1.png';
-import GA2 from './assets/GA2.png';
+import GA2 from '../assets/GA2.png';
 import GA3 from './assets/GA3.png';
 import GA4 from './assets/GA4.png';
 import TrainPA1 from './assets/TrainPA1.png';
@@ -20,7 +20,7 @@ import ILLUST2 from './assets/ILLUST2.png';
 import ILLUST3 from './assets/ILLUST3.jpeg';
 import ILLUST4 from './assets/ILLUST4.png';
 import ILLUST5 from './assets/ILLUST5.png';
-import COMS1 from './assets/COMS1.gif';
+import COMS1 from './assets/COMS1.mp4';
 import POS3 from './assets/POS1.png';
 import POS2 from './assets/POS2.png';
 import POS1 from './assets/POS3.png';
@@ -107,6 +107,7 @@ const projects = [
     • Implemented smooth character animations
     • Optimized color palettes for consistent visual style`,
     image: COMS1,
+    images: [COMS1],
     tags: ["Pixel Art", "Animation", "Commission", "Parallax Effect", "Aseprite"],
     programs: ["Aseprite", "Procreate"],
     type: "Pixel Art Animation"
@@ -296,6 +297,36 @@ const Icon = ({ icon: IconComponent, className = "w-5 h-5", white = false }) => 
   }
 };
 
+// Media Renderer Component for handling both images and videos
+const MediaRenderer = ({ src, alt, className, isThumbnail = false }) => {
+  const isVideo = src?.toLowerCase().match(/\.(mp4|webm|mov|avi|mkv)$/i);
+  
+  if (isVideo) {
+    return (
+      <video
+        src={src}
+        className={className}
+        muted
+        loop
+        playsInline
+        autoPlay={isThumbnail}
+        controls={!isThumbnail}
+        poster={isThumbnail ? null : undefined}
+      >
+        Your browser does not support the video tag.
+      </video>
+    );
+  }
+  
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={className}
+    />
+  );
+};
+
 export default function Works() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -421,10 +452,11 @@ export default function Works() {
                 className="group bg-white/90 backdrop-blur-sm border border-white/30 rounded-xl sm:rounded-2xl overflow-hidden hover:border-white/60 transition-all duration-500 hover:scale-[1.02] shadow-lg hover:shadow-xl flex flex-col h-full cursor-pointer"
               >
                 <div className="relative flex-grow h-64 sm:h-72 md:h-80 lg:h-96 overflow-hidden">
-                  <img
+                  <MediaRenderer
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    isThumbnail={true}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                   
@@ -522,6 +554,7 @@ export default function Works() {
           typeColors={typeColors}
           categoryIcons={categoryIcons}
           programIcons={programIcons}
+          MediaRenderer={MediaRenderer} // Pass MediaRenderer to modal
         />
       )}
     </div>
