@@ -16,7 +16,7 @@ import GA3 from './assets/GA3.PNG';
 import GA4 from './assets/GA4.PNG';
 import TrainPA1 from './assets/TrainPA1.PNG';
 import ILLUST1 from './assets/ILLUST1.png';
-import ILLUST2 from './assets/ILLUST2.pnh';
+import ILLUST2 from './assets/ILLUST2.png';
 import ILLUST3 from './assets/ILLUST3.jpeg';
 import ILLUST4 from './assets/ILLUST4.png';
 import ILLUST5 from './assets/ILLUST5.png';
