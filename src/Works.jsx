@@ -12,7 +12,7 @@ import Port3 from './assets/Port3.png';
 import Port4 from './assets/Port4.png';
 import GA1 from './assets/GA1.PNG';
 import GA2 from './assets/GA2.png';
-import GA3 from './assets/GA3.png';
+import GA3 from './assets/GA3.PNG';
 import GA4 from './assets/GA4.png';
 import TrainPA1 from './assets/TrainPA1.png';
 import ILLUST1 from './assets/ILLUST1.png';
